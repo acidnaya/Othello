@@ -3,7 +3,7 @@ public class Menu {
     static final char PLAYER2_SYMBOL = 'o';
     static final char SPACE_SYMBOL = ' ';
     static final char AVAILABLE_SYMBOL = '*';
-    static final int BOARD_SIZE = 4;
+    static final int BOARD_SIZE = 8;
 
     public static void startMenu() {
         int bestScore = 0;
