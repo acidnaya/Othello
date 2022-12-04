@@ -48,6 +48,7 @@ class CleverBot extends Player {
             var opMove = opponent.makeMove(currentBoard, currentBoard.getAvailableMoves(opponent.getSymbol()));
             if ((opMove.isPresent() ? move.compareTo(opMove.get()) : move.getAddedPoints()) >= biggestPoint) {
                 bestMove = move;
+                biggestPoint = bestMove.getAddedPoints();
             }
         }
         return Optional.ofNullable(bestMove);
